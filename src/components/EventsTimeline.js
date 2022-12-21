@@ -19,7 +19,7 @@ const EventsTimeline = (props) => {
         if (item.date && item.content) {
           return (
             <EventsTimelineItem
-              key={item.date}
+              key={item.key || item.date}
               content={item.content}
               label={item.label}
               location={item.location}
